@@ -11,3 +11,16 @@ npm i animate.css
 
 Gsap
 npm i gsap-trial
+
+Loaders
+npm i loaders.css
+npm i react-loaders
+
+leaflet
+npm i react-leaflet
+
+router-dom
+npm i react-router-dom
+
+sass
+npm i sass
