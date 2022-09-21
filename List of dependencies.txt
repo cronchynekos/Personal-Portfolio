@@ -1,0 +1,13 @@
+Emailjs
+npm i @emailjs/browser
+
+FortAwesome Icons
+npm i @fortawesome/free-brands-svg-icons
+npm i @fortawesome/free-solid-svg-icons
+npm i @fortawesome/react-fontawesome
+
+Animate.css
+npm i animate.css
+
+Gsap
+npm i gsap-trial
