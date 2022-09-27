@@ -38,3 +38,46 @@
     animation: fadeIn 1s forwards;
     animation-duration: 1s;
 }
+
+.about-page {
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+
+        h1 {
+            font-size: 55px;
+            font-family: 'Coolvetica';
+            color: black;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 40px;
+            position: relative;
+            left: 10px;
+        }
+
+        p {
+            font-style: 13px;
+            color: black;
+            font-family: sans-serif;
+            font-weight: 300;
+            min-width: fit-content;
+            animation: fadeIn 1s ease-in;
+
+            &:nth-of-type(1) {
+                animation-delay: 0s;
+            }
+            &:nth-of-type(2) {
+                animation-delay: 0.2s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: 0.4s;
+            }
+        }
+    }
+}
