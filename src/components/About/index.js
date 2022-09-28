@@ -9,7 +9,8 @@ const About = () => {
                     About Me
                 </h1>
                 <p>
-                    about
+                    I am an aspiring Software Engineering student with an expected graduation of May 2023. 
+                    Currently I love designing and constructing webpages using React as well as 
                 </p>
                 <p>
                     about
