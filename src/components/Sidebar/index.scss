@@ -60,6 +60,7 @@
             &:after {
                 content: '';
                 font-size: 9px;
+                font-family: sans-serif;
                 position: absolute;
                 bottom: 0;
                 display: block;
@@ -75,6 +76,8 @@
                 }
             }
         }
+
+
         a.about-link {
             &::after {
                 content: 'ABOUT';

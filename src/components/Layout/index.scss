@@ -63,25 +63,29 @@
         }
 
         p {
+            opacity: 0;
             font-size: 2rem;
             color: black;
             font-family: sans-serif;
             font-weight: 300;
             min-width: fit-content;
-            opacity: 0;
             animation: fadeIn 1s ease-in;
+            animation-fill-mode: forwards;
 
             &:nth-of-type(1) {
-                animation-delay: 0s;
-                opacity: 1;
+                from { opacity: 0; }
+                to   { opacity: 1; }
+                animation-delay: 0.4s;
             }
             &:nth-of-type(2) {
-                animation-delay: 0.2s;
-                opacity: 1;
+                from { opacity: 0; }
+                to   { opacity: 1; }
+                animation-delay: 0.65s;
             }
             &:nth-of-type(3) {
-                animation-delay: 0.4s;
-                opacity: 1;
+                from { opacity: 0; }
+                to   { opacity: 1; }
+                animation-delay: .9s;
             }
         }
     }

@@ -10,13 +10,14 @@ const About = () => {
                 </h1>
                 <p>
                     I am an aspiring Software Engineering student with an expected graduation of May 2023. 
-                    Currently I love designing and constructing webpages using React as well as 
+                    Currently committed to creating sleek and modern web applications using React.
                 </p>
                 <p>
-                    about
+                    Right now, I am focused on learning how to create mobile applications as well as mobile responsive webpages.
                 </p>
                 <p>
-                    about
+                    A few other things about me are that I enjoy photography and video editing as well as a variety of different sports including:
+                    tennis, pickleball, basketball and badminton.
                 </p>
             </div>
         </div>
