@@ -77,15 +77,14 @@
             }
         }
 
-
         a.about-link {
-            &::after {
+            &:after {
                 content: 'ABOUT';
             }
         }
 
         a.contact-link {
-            &::after {
+            &:after {
                 content: 'CONTACT';
             }
         }
