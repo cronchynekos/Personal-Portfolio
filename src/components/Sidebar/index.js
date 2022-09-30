@@ -16,21 +16,24 @@ const Sidebar = () => (
             exact={true} 
             activeclassname="active" 
             to='/'
-            end>
+            end
+            >
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
             <NavLink 
             exact="true" 
             activeclassname="active" 
             className="about-link" 
-            to="/about">
+            to="/about"
+            >
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
             <NavLink 
             exact="true" 
             activeclassname="active" 
             className="contact-link" 
-            to="/contact">
+            to="/contact"
+            >
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
         </nav>

@@ -9,8 +9,6 @@ const Lay = () => {
         <div className="App">
             <Sidebar />
             <Outlet />
-            {/* <Home /> */}
-            {/* <About /> */}
         </div>
     )
 }
