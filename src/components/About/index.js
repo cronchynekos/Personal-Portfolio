@@ -13,7 +13,7 @@ const About = () => {
                     Currently committed to creating sleek and modern web applications using React.
                 </p>
                 <p>
-                    Right now, I am focused on learning how to create mobile applications as well as mobile responsive webpages.
+                    Right now, I am focused on creating mobile applications as well as mobile responsive webpages.
                 </p>
                 <p>
                     A few other things about me are that I enjoy photography and video editing as well as a variety of different sports including:
