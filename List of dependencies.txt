@@ -24,3 +24,12 @@ npm i react-router-dom
 
 sass
 npm i sass
+
+chakra ui
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+next js
+npm install next react react-dom
+
+three
+npm i three
