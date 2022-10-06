@@ -1,25 +1,25 @@
 import { Link } from 'react-router-dom' 
 import './index.scss';
-import VoxelLoader from '../Voxel/voxel-loader'
-import dynamic from 'next/dynamic'
-import { Container } from '@chakra-ui/react'
-// import '../Voxel/simpleVox'
-
-
-// const Voxel = dynamic(() => import('../Voxel/voxel-me'), {
-//     ssr: false,
-//     loading: () => <VoxelLoader />
-//   })
+import App from './three'
+import React from 'react';
+// import { useEffect } from 'react';
+// import * as THREE from 'three';
+// import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// import SceneInit from './SceneInit';
+// import {ReactDOM} from 'react-dom'
 
 const Home = () => {
 
+
     return (
-        <div className = "container home-page">
-             {/* <Container maxW="container.md" pt={14}>
+        <div className = "container home-page">\
 
-                 <Voxel />
 
-             </Container> */}
+            <div className="three-zone">
+                <App />
+
+            </div>
 
             <div className="text-zone">
                 <h1>Hey There, 
