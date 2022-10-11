@@ -1,20 +1,13 @@
 .home-page {
+    height: 90%;
+    width: 30%;
 
-    // position: relative;
-    .three-zone {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        height: 70%;
-        width: 50%;
-        transform: translateY(-50%);
-    }
     .text-zone {
         position: absolute;
-        left: 10%;
+        left: 30%;
         top: 50%;
         transform: translateY(-50%);
-        width: 40%;
+        width: 70%;
         max-height: 90%;
     }
 

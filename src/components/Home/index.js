@@ -14,12 +14,9 @@ const Home = () => {
 
     return (
         <div className = "container home-page">\
+            <canvas id="myThreeJsCanvas" />
 
-
-            <div className="three-zone">
-                <App />
-
-            </div>
+            <App />
 
             <div className="text-zone">
                 <h1>Hey There, 
