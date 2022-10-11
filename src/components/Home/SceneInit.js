@@ -27,20 +27,17 @@ export default class SceneInit {
 
   initialize() {
     this.scene = new THREE.Scene();
-    // this.scene.background = new THREE.Color( 0xff0000 );
     this.camera = new THREE.PerspectiveCamera(
       this.fov,
       window.innerWidth / window.innerHeight,
       1,
       1000
     );
-    this.camera.position.z = 48;
+    this.camera.position.z = 15;
 
-    // NOTE: Specify a canvas which is already created in the HTML.
     const canvas = document.getElementById(this.canvasId);
     this.renderer = new THREE.WebGLRenderer({
       canvas,
-      // NOTE: Anti-aliasing smooths out the edges.
       antialias: true,
       alpha: true,
     });
@@ -52,8 +49,6 @@ export default class SceneInit {
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     // this.stats = Stats();
     // document.body.appendChild(this.stats.dom);
-
-    // this.renderer.setClearColorHex( 0xffffff, 1 );
 
     // ambient light which is for the whole scene
     this.ambientLight = new THREE.AmbientLight(0xffffff, 0.9);

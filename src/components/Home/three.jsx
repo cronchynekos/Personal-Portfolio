@@ -1,8 +1,11 @@
 import { useEffect } from 'react';
-import * as THREE from 'three';
+// import * as THREE from 'three';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+// import { PerspectiveCamera } from 'three/src/cameras/PerspectiveCamera';
+// import { WebGLRenderer } from 'three/src/renderers/WebGLRenderer';
+// import { DirectionalLight } from 'three';
 import SceneInit from './SceneInit';
 // import { withTheme } from '@emotion/react';
 
@@ -13,24 +16,33 @@ function App() {
     test.initialize();
     test.animate();
 
-    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
-    camera.position.z = 200;   
+    // var camera = new THREE.PerspectiveCamera( 45, window.innerWidth/window.innerHeight, 0.1, 1000 );
+    // camera.position.z = 400;
     
-    var renderer = new THREE.WebGLRenderer();
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement );
+    // var renderer = new THREE.WebGLRenderer(); 
+    // renderer.setSize( window.innerWidth, window.innerHeight );
+    // document.body.appendChild( renderer.domElement );
 
-    const boxGeometry = new THREE.BoxGeometry(8, 8, 8);
-    const boxMaterial = new THREE.MeshNormalMaterial();
-    const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
-    test.scene.add(boxMesh);
-    let loadedModel;
-    loadedModel = boxMesh;
+    // var keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(30, 100%, 75%)'), 1.0);
+    // keyLight.position.set(-100, 0, 100);
 
-    var controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.25;
-    controls.enableZoom = true;
+    // var fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240, 100%, 75%)'), 0.75);
+    // fillLight.position.set(100, 0, 100);
+
+    // var backLight = new THREE.DirectionalLight(0xffffff, 1.0);
+    // backLight.position.set(100, 0, -100).normalize();
+
+    // const boxGeometry = new THREE.BoxGeometry(8, 8, 8);
+    // const boxMaterial = new THREE.MeshNormalMaterial();
+    // const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
+    // test.scene.add(boxMesh);
+    // let loadedModel;
+    // loadedModel = boxMesh;
+
+    // var controls = new OrbitControls(camera, renderer.domElement);
+    // controls.enableDamping = true;
+    // controls.dampingFactor = 0.25;
+    // controls.enableZoom = true;
 
     // let loadedModel;
     // const objLoader = new OBJLoader();
@@ -44,36 +56,32 @@ function App() {
     //   test.scene.add(objScene);
     // });
 
-    // const obj = 'http://localhost:3000/voxelMe.obj';
-    // const mtl = 'http://localhost:3000/voxelMe.mtl';
-
+    let loadedModel;
     var mtlLoader = new MTLLoader();
-    // mtlLoader.setTexturePath('/public/');
-    // mtlLoader.setPath('/public/');
-    mtlLoader.load('../../../public/voxelMe.mtl', function (materials) {
+    mtlLoader.load('./voxelMe.mtl', function (materials) {
 
         materials.preload();
 
         var objLoader = new OBJLoader();
         objLoader.setMaterials(materials);
-        // objLoader.setPath('/public/');
-        objLoader.load('../../../public/voxelMe.obj', function (object) {
+        objLoader.load('./voxelMe.obj', function (object) {
 
             test.scene.add(object);
-            object.position.y -= 60;
-
+            object.position.z = 0;
+            object.position.y = 0;
+            object.position.x = 0;
+            loadedModel = object;
         });
-
     });
 
     const animate = () => {
       if (loadedModel) {
-        loadedModel.rotation.x += 0.01;
+        loadedModel.rotation.x += 0.00;
         loadedModel.rotation.y += 0.01;
-        loadedModel.rotation.z += 0.01;
+        loadedModel.rotation.z += 0.00;
       }
       requestAnimationFrame(animate);
-      controls.update();
+      // controls.update();
     };
     animate();
   }, []);
