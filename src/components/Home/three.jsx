@@ -24,6 +24,10 @@ function App() {
     const gltfLoader = new GLTFLoader();
     gltfLoader.load('./voxelMe.gltf', function (gltfScene) {
 
+      gltfScene.scene.rotation.x = Math.PI / 8;
+      gltfScene.scene.scale.set(1.35, 1.35, 1.35);
+      // gltfScene.scene.position.x = 15;
+
       test.scene.add(gltfScene.scene);
       loadedModel = gltfScene.scene;
       // test.scene.add(loadedModel);

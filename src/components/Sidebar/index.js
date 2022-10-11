@@ -9,7 +9,7 @@ const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
             <img src ={Logo} alt="logo" />
-            <h4>Nathanael</h4>
+            {/* <h4>Nathanael</h4> */}
         </Link>
         <nav>
             <NavLink 
