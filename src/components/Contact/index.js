@@ -31,6 +31,7 @@ const Contact = () => {
     return (
         <>
             <div className="container contact-page">
+                
                 <div className='text-zone'>
                     <h1>
                         Contact
@@ -104,6 +105,7 @@ const Contact = () => {
                         </Marker>
                     </MapContainer>
                 </div>
+                <div className ='BGFill'></div>
             </div>
         </>
     )

@@ -1,11 +1,13 @@
 .home-page {
+    height: 90%;
+    width: 30%;
 
     .text-zone {
         position: absolute;
-        left: 10%;
+        left: 30%;
         top: 50%;
         transform: translateY(-50%);
-        width: 40%;
+        width: 70%;
         max-height: 90%;
     }
 
@@ -25,6 +27,17 @@
     }
 
 }
+
+.Home-header {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
 
 .flat-button {
     color: teal;

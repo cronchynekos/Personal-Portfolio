@@ -1,9 +1,12 @@
 import './index.scss'
 
 const About = () => {
-
+    // var c = document.getElementById("myThreeJsCanvas");
+    // var context = c.getContext('2d');
+    // context.clearRect(0, 0, c.width, c.height);
     return(
         <div className='container about-page'>
+            <div className ='BGFill'></div>
             <div className='text-zone'>
                 <h1>
                     About Me
