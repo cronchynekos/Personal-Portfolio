@@ -43,54 +43,109 @@
     width: 100%;
     height: 100%;
 }
-
-.about-page,
-.contact-page {
-    .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 35%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
-        background-color: azure;
-        h1 {
-            font-size: 55px;
-            font-family: 'Coolvetica';
-            color: black;
-            font-weight: 400;
-            margin-top: 0;
-            margin-bottom: 40px;
-            position: relative;
-            left: 10px;
+@media only screen and (min-width: 1200px){
+    .about-page,
+    .contact-page {
+        .text-zone {
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35%;
+            vertical-align: middle;
+            display: table-cell;
+            max-height: 90%;
+            background-color: azure;
+            h1 {
+                font-size: 55px;
+                font-family: 'Coolvetica';
+                color: black;
+                font-weight: 400;
+                margin-top: 0;
+                margin-bottom: 40px;
+                position: relative;
+                left: 10px;
+            }
+    
+            p {
+                opacity: 0;
+                font-size: 2rem;
+                color: black;
+                font-family: sans-serif;
+                font-weight: 300;
+                min-width: fit-content;
+                animation: fadeIn 1s ease-in;
+                animation-fill-mode: forwards;
+    
+                &:nth-of-type(1) {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                    animation-delay: 0.4s;
+                }
+                &:nth-of-type(2) {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                    animation-delay: 0.65s;
+                }
+                &:nth-of-type(3) {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                    animation-delay: .9s;
+                }
+            }
         }
-
-        p {
-            opacity: 0;
-            font-size: 2rem;
-            color: black;
-            font-family: sans-serif;
-            font-weight: 300;
-            min-width: fit-content;
-            animation: fadeIn 1s ease-in;
-            animation-fill-mode: forwards;
-
-            &:nth-of-type(1) {
-                from { opacity: 0; }
-                to   { opacity: 1; }
-                animation-delay: 0.4s;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .about-page,
+    .contact-page {
+        .text-zone {
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 70%;
+            margin-left: 35px;
+            vertical-align: middle;
+            display: table-cell;
+            max-height: 90%;
+            background-color: azure;
+            h1 {
+                font-size: 55px;
+                font-family: 'Coolvetica';
+                color: black;
+                font-weight: 400;
+                margin-top: 0;
+                margin-bottom: 40px;
+                position: relative;
+                left: 10px;
             }
-            &:nth-of-type(2) {
-                from { opacity: 0; }
-                to   { opacity: 1; }
-                animation-delay: 0.65s;
-            }
-            &:nth-of-type(3) {
-                from { opacity: 0; }
-                to   { opacity: 1; }
-                animation-delay: .9s;
+    
+            p {
+                opacity: 0;
+                font-size: 1.5rem;
+                color: black;
+                font-family: sans-serif;
+                font-weight: 300;
+                min-width: fit-content;
+                animation: fadeIn 1s ease-in;
+                animation-fill-mode: forwards;
+    
+                &:nth-of-type(1) {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                    animation-delay: 0.4s;
+                }
+                &:nth-of-type(2) {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                    animation-delay: 0.65s;
+                }
+                &:nth-of-type(3) {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                    animation-delay: .9s;
+                }
             }
         }
     }
