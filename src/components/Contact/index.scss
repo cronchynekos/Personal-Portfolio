@@ -58,36 +58,42 @@
         border: 1px solid teal;
         }
 }
-
-.info-map {
-    position: absolute;
-    background-color: black;
-    top: 50px;
-    right: 30%;
-    z-index: 999999;
-    width: 267px;
-    padding: 20px;
-    color: white;
-    font-family: 'Helvetica';
-    font-size: 17px;
-    font-weight: 300;
-    opacity: 0;
-    animation: fadeIn 1s 1.5s;
-    animation-fill-mode: forwards;
-
-    span {
-        font-size: 16px;
-        display: block;
-        padding-top: 20px;
-        color: white;
+@media only screen and (max-width: 1200px){
+    .info-map{
+        opacity: 0;
     }
 }
+@media only screen and (min-width: 1200px){
+    .info-map {
+        position: absolute;
+        background-color: black;
+        top: 50px;
+        right: 30%;
+        z-index: 999999;
+        width: 267px;
+        padding: 20px;
+        color: white;
+        font-family: 'Helvetica';
+        font-size: 17px;
+        font-weight: 300;
+        opacity: 0;
+        animation: fadeIn 1s 1.5s;
+        animation-fill-mode: forwards;
+    
+        span {
+            font-size: 16px;
+            display: block;
+            padding-top: 20px;
+            color: white;
+        }
+    }
 
-.map-wrap {
-    background: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
-    height: 100%;
+    .map-wrap {
+        background: rgba(8, 253, 216, 0.1);
+        float: right;
+        width: 53%;
+        height: 100%;
+    }
 }
 
 .leaflet-container {
