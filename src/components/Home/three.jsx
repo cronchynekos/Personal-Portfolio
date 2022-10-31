@@ -36,12 +36,12 @@ function App() {
       // test.scene.add(loadedModel);
     });
 
-    let frame = 30;
+    let frame = 60;
     const animate = () => {
 
       frame = frame <= 100 ? frame + 1 : frame;
 
-      if (frame <= 110){
+      if (frame <= 102){
         var rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
         if (loadedModel) {
           loadedModel.rotation.x += 0.00;
