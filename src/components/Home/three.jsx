@@ -28,7 +28,7 @@ function App() {
     gltfLoader.load('./voxelMe.gltf', function (gltfScene) {
 
       gltfScene.scene.rotation.x = Math.PI / 8;
-      gltfScene.scene.scale.set(1.35, 1.35, 1.35);
+      gltfScene.scene.scale.set(1.3, 1.3, 1.3);
       // gltfScene.scene.position.x = 15;
 
       test.scene.add(gltfScene.scene);
@@ -36,7 +36,7 @@ function App() {
       // test.scene.add(loadedModel);
     });
 
-    let frame = 60;
+    let frame = 30;
     const animate = () => {
 
       frame = frame <= 100 ? frame + 1 : frame;
