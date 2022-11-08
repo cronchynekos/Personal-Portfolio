@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/Personal-Porfolio/" element={<Layout />} >
+        <Route path="/Personal-Portfolio/" element={<Layout />} >
           <Route index element={<Home />} />
-          <Route path="/Personal-Porfolio/about" element={<About />} />
-          <Route path="/Personal-Porfolio/contact" element={<Contact />} />
+          <Route path="/Personal-Portfolio/about" element={<About />} />
+          <Route path="/Personal-Portfolio/contact" element={<Contact />} />
         </Route>
       </Routes>
     </>

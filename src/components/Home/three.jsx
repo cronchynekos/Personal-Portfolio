@@ -25,7 +25,7 @@ function App() {
     gltfLoader.load('./voxelMe.gltf', function (gltfScene) {
 
       gltfScene.scene.rotation.x = Math.PI / 8;
-      gltfScene.scene.scale.set(1.35, 1.35, 1.35);
+      gltfScene.scene.scale.set(1.3, 1.3, 1.3);
       // gltfScene.scene.position.x = 15;
 
       test.scene.add(gltfScene.scene);
@@ -38,7 +38,7 @@ function App() {
 
       frame = frame <= 100 ? frame + 1 : frame;
 
-      if (frame <= 105){
+      if (frame <= 102){
         var rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
         if (loadedModel) {
           loadedModel.rotation.x += 0.00;
