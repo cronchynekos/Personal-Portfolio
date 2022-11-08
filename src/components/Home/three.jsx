@@ -1,10 +1,7 @@
 import { useEffect } from 'react';
 // import * as THREE from 'three';
-// import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
-// import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import SceneInit from './SceneInit';
-// import { withTheme } from '@emotion/react';
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -36,7 +33,7 @@ function App() {
       // test.scene.add(loadedModel);
     });
 
-    let frame = 30;
+    let frame = 50;
     const animate = () => {
 
       frame = frame <= 100 ? frame + 1 : frame;
@@ -45,11 +42,13 @@ function App() {
         var rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
         if (loadedModel) {
           loadedModel.rotation.x += 0.00;
-          loadedModel.rotation.y += 0.005 + rotSpeed;
+          loadedModel.rotation.y += 0.01 + rotSpeed;
           loadedModel.rotation.z += 0.00;
         }
       }else{
         loadedModel.rotation.y += 0.005;
+        loadedModel.rotation.x += 0.005;
+        loadedModel.rotation.z += 0.005;
       }
       requestAnimationFrame(animate);
     };
