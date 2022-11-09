@@ -2,7 +2,7 @@ import './index.scss';
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../../assets/images/Letter-N-Long.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faUser, faSuitcase } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
@@ -20,6 +20,7 @@ const Sidebar = () => (
             >
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
+
             <NavLink 
             exact="true" 
             activeclassname="active" 
@@ -28,6 +29,16 @@ const Sidebar = () => (
             >
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
+
+            <NavLink 
+            exact="true" 
+            activeclassname="active" 
+            className="portfolio-link" 
+            to="/Personal-Portfolio/portfolio"
+            >
+                <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+            </NavLink>
+
             <NavLink 
             exact="true" 
             activeclassname="active" 
