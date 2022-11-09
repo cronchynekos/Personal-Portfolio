@@ -1,7 +1,13 @@
 {
     "portfolio" : [
         {
-            "cover": "/portfolio/1/one/png",
+            "cover": "/Personal-Portfolio/portfolio/1/two.png",
+            "title": "Cocktail House",
+            "description": "React, JSX, Splidejs",
+            "url": "https://cronchynekos.github.io/Cocktail-Recipe-App/"
+        },
+        {
+            "cover": "/Personal-Portfolio/portfolio/1/two.png",
             "title": "Cocktail House",
             "description": "React, JSX, Splidejs",
             "url": "https://cronchynekos.github.io/Cocktail-Recipe-App/"
