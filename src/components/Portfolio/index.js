@@ -15,8 +15,8 @@ const Portfolio = () => {
                         return (
                             <div className="image-box" key={idx}>
                                 <img 
-                                width="300" 
-                                height="300"
+                                // width="250" 
+                                // height="250"
                                 src={port.cover}
                                 className="portfolio-image"
                                 alt="portfolio" />
