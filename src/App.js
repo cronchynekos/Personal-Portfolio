@@ -17,6 +17,7 @@ function App() {
           <Route path="/Personal-Portfolio/portfolio" element={<Portfolio />} />
         </Route>
       </Routes>
+    <canvas id="myThreeJsCanvas" />
     </>
   )
 }

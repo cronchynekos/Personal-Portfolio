@@ -105,7 +105,7 @@ const Contact = () => {
                         </Marker>
                     </MapContainer>
                 </div>
-                <div className ='BGFill'></div>
+                {/* <div className ='BGFill'></div> */}
             </div>
         </>
     )

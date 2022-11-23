@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <div className = "container home-page">\
-            <canvas id="myThreeJsCanvas" />
+            {/* <canvas id="myThreeJsCanvas" /> */}
 
             <App />
 
