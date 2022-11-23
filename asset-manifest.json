@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio/static/css/main.235e82b8.css",
-    "main.js": "/Personal-Portfolio/static/js/main.125be094.js",
-    "static/js/787.fb771931.chunk.js": "/Personal-Portfolio/static/js/787.fb771931.chunk.js",
-    "static/media/helvetica-neu.ttf": "/Personal-Portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
-    "static/media/LaBelleAurore.woff2": "/Personal-Portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
-    "static/media/CoolveticaRg-Regular.woff2": "/Personal-Portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
-    "index.html": "/Personal-Portfolio/index.html",
-    "main.235e82b8.css.map": "/Personal-Portfolio/static/css/main.235e82b8.css.map",
-    "main.125be094.js.map": "/Personal-Portfolio/static/js/main.125be094.js.map",
-    "787.fb771931.chunk.js.map": "/Personal-Portfolio/static/js/787.fb771931.chunk.js.map"
+    "main.css": "/www.nathanaelkim.com/static/css/main.276addfe.css",
+    "main.js": "/www.nathanaelkim.com/static/js/main.d76c13b1.js",
+    "static/js/787.7efd31bd.chunk.js": "/www.nathanaelkim.com/static/js/787.7efd31bd.chunk.js",
+    "static/media/helvetica-neu.ttf": "/www.nathanaelkim.com/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/www.nathanaelkim.com/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff2": "/www.nathanaelkim.com/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/www.nathanaelkim.com/index.html",
+    "main.276addfe.css.map": "/www.nathanaelkim.com/static/css/main.276addfe.css.map",
+    "main.d76c13b1.js.map": "/www.nathanaelkim.com/static/js/main.d76c13b1.js.map",
+    "787.7efd31bd.chunk.js.map": "/www.nathanaelkim.com/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.235e82b8.css",
-    "static/js/main.125be094.js"
+    "static/css/main.276addfe.css",
+    "static/js/main.d76c13b1.js"
   ]
 }
