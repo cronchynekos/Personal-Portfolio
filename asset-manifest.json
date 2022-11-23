@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/www.nathanaelkim.com/static/css/main.276addfe.css",
-    "main.js": "/www.nathanaelkim.com/static/js/main.d76c13b1.js",
+    "main.js": "/www.nathanaelkim.com/static/js/main.bf6c7e01.js",
     "static/js/787.7efd31bd.chunk.js": "/www.nathanaelkim.com/static/js/787.7efd31bd.chunk.js",
     "static/media/helvetica-neu.ttf": "/www.nathanaelkim.com/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff2": "/www.nathanaelkim.com/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "/www.nathanaelkim.com/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/www.nathanaelkim.com/index.html",
     "main.276addfe.css.map": "/www.nathanaelkim.com/static/css/main.276addfe.css.map",
-    "main.d76c13b1.js.map": "/www.nathanaelkim.com/static/js/main.d76c13b1.js.map",
+    "main.bf6c7e01.js.map": "/www.nathanaelkim.com/static/js/main.bf6c7e01.js.map",
     "787.7efd31bd.chunk.js.map": "/www.nathanaelkim.com/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.276addfe.css",
-    "static/js/main.d76c13b1.js"
+    "static/js/main.bf6c7e01.js"
   ]
 }
