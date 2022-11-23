@@ -32,7 +32,7 @@ const About = () => {
                 <span className="title">HTML</span>
                 <div className="skill-bar">
                     <span className="skill-per html">
-                        <span className="tooltip">95%</span>
+                        <span className="tooltip">85%</span>
                     </span>
                 </div>
             </div>
@@ -53,23 +53,23 @@ const About = () => {
                 </div>
             </div>
             <div className="skill-box">
-                <span className="title">NodeJS</span>
+                <span className="title">C++</span>
                 <div className="skill-bar">
                     <span className="skill-per nodejs">
-                        <span className="tooltip">40%</span>
+                        <span className="tooltip">85%</span>
                     </span>
                 </div>
             </div>
             <div className="skill-box">
-                <span className="title">ReactJS</span>
+                <span className="title">Python</span>
                 <div className="skill-bar">
                     <span className="skill-per reactjs">
-                        <span className="tooltip">70%</span>
+                        <span className="tooltip">65%</span>
                     </span>
                 </div>
             </div>
             <div className="skill-box">
-                <span className="title">ExpressJS</span>
+                <span className="title">Unreal Engine</span>
                 <div className="skill-bar">
                     <span className="skill-per expressjs">
                         <span className="tooltip">75%</span>
