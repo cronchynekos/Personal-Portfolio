@@ -6,7 +6,7 @@ import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet'
 
 const Contact = () => {
 
-    const refForm = useRef()
+    const form = useRef()
     const sendEmail = (e) => {
         e.preventDefault()
 
@@ -14,8 +14,8 @@ const Contact = () => {
             .sendForm(
                 'service_ndjy673',
                 'template_zz27wxh',
-                refForm.current
-                // 'xemcS10KHUKkZoDgZaser'
+                form.current,
+                'WT_sh37QCBKzOGyao'
             )
             .then(
                 () => {
@@ -40,14 +40,14 @@ const Contact = () => {
                         Feel free to contact me using email, discord or any of my social medias
                     </p>
                     <div className='contact-form'>
-                        <form ref={refForm} onSubmit={sendEmail}>
+                        <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
                                     <input 
                                     type='text' 
                                     name='from_name' 
                                     placeholder='Name' 
-                                    required 
+                                    required
                                     />
                                 </li>
                                 <li className='half'>
@@ -55,21 +55,23 @@ const Contact = () => {
                                     type='email' 
                                     name='email_id' 
                                     placeholder='Email' 
-                                    required 
+                                    required
                                     />
                                 </li>
                                 <li>
                                     <input 
                                     placeholder='Subject' 
                                     type="text" 
-                                    name="subject" 
+                                    name="subject"
+                                    required 
                                     />
                                 </li>
                                 <li>
                                     <textarea 
                                     placeholder='Message' 
                                     text="Message" 
-                                    name="message" 
+                                    name="message"
+                                    required 
                                     />
                                 </li>
                                 <li>

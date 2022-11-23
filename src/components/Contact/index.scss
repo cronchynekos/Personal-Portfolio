@@ -22,6 +22,28 @@
     .contact-form {
         width: 100%;
         margin-top: 20px;
+        .flat-button{
+            position: relative;
+            left: 30%;
+            top: 62%;
+            color: teal;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            font-family: sans-serif;
+            text-decoration: none;
+            padding: 10px 18px;
+            border: 2px solid teal;
+            margin-top: 10px;
+            float: left;
+            animation: fadeIn 1s .5s backwards;
+            white-space: nowrap;
+        
+            &:hover {
+                background: teal;
+                color: white;
+            }
+        }
     
         ul {
             padding: 0;
@@ -120,7 +142,29 @@
         width: 100%;
         margin-top: 20px;
         // background-color: azure;
-    
+        .flat-button{
+            position: relative;
+            left: 0%;
+            top: 62%;
+            color: teal;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            font-family: sans-serif;
+            text-decoration: none;
+            padding: 10px 18px;
+            border: 2px solid teal;
+            margin-top: 10px;
+            float: left;
+            animation: fadeIn 1s .5s backwards;
+            white-space: nowrap;
+        
+            &:hover {
+                background: teal;
+                color: white;
+            }
+        }
+
         ul {
             padding: 0;
             margin: 0;
