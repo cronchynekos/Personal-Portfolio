@@ -13,7 +13,7 @@ const Sidebar = () => {
     return (
 
     <div className='nav-bar'>
-        <Link className='logo' to='/Personal-Portfolio/'>
+        <Link className='logo' to='/'>
             <img src ={Logo} alt="logo" />
             {/* <h4>Nathanael</h4> */}
         </Link>
@@ -21,7 +21,7 @@ const Sidebar = () => {
             <NavLink 
             exact={true} 
             activeclassname="active" 
-            to='/Personal-Portfolio/'
+            to='/'
             end
             >
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
@@ -31,7 +31,7 @@ const Sidebar = () => {
             exact="true" 
             activeclassname="active" 
             className="about-link" 
-            to="/Personal-Portfolio/about"
+            to="/about"
             >
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
@@ -40,7 +40,7 @@ const Sidebar = () => {
             exact="true" 
             activeclassname="active" 
             className="portfolio-link" 
-            to="/Personal-Portfolio/portfolio"
+            to="/portfolio"
             >
                 <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
             </NavLink>
@@ -49,7 +49,7 @@ const Sidebar = () => {
             exact="true" 
             activeclassname="active" 
             className="contact-link" 
-            to="/Personal-Portfolio/contact"
+            to="/contact"
             >
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>

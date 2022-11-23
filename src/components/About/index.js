@@ -24,6 +24,7 @@ const About = () => {
                 </p>
             </div>
 
+        <div className='botfill'>
 
             <div className="cont">
             <h1 className="title-text">Skills</h1>
@@ -76,6 +77,7 @@ const About = () => {
                     </span>
                 </div>
             </div>
+        </div>
         </div>
         </div>
     )

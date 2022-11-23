@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio",
   "version": "0.1.0",
-  "homepage": "https://cronchyneko.github.io/Personal-Portfolio/",
+  "homepage": "http://cronchynekos.github.io",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.3.5",

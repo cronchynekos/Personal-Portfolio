@@ -10,14 +10,14 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/Personal-Portfolio/" element={<Layout />} >
+        <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />
-          <Route path="/Personal-Portfolio/about" element={<About />} />
-          <Route path="/Personal-Portfolio/contact" element={<Contact />} />
-          <Route path="/Personal-Portfolio/portfolio" element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Route>
       </Routes>
-    <canvas id="myThreeJsCanvas" />
+    <canvas id="myThreeJsCanvas" className='threeJs'/>
     </>
   )
 }

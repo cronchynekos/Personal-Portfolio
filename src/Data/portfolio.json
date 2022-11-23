@@ -1,37 +1,37 @@
 {
     "portfolio" : [
         {
-            "cover": "/Personal-Portfolio/portfolio/1/two.png",
+            "cover": "/portfolio/1/two.png",
             "title": "Cocktail House",
             "description": "React, JSX, Splidejs",
             "url": "https://cronchynekos.github.io/Cocktail-Recipe-App/"
         },
         {
-            "cover": "/Personal-Portfolio/portfolio/Fantasy-Island/thumb.png",
+            "cover": "/portfolio/Fantasy-Island/thumb.png",
             "title": "Fantasy Island",
             "description": "Unreal Engine 4.27",
             "url": "https://github.com/agolubow/project362/"
         },
         {
-            "cover": "/Personal-Portfolio/portfolio/Compiler/thumb.png",
+            "cover": "/portfolio/Compiler/thumb.png",
             "title": "PL/0 Complier",
             "description": "C++",
             "url": "https://github.com/agolubow/project362/"
         },
         {
-            "cover": "/Personal-Portfolio/portfolio/Crossyroad/thumb.png",
+            "cover": "/portfolio/Crossyroad/thumb.png",
             "title": "Crossy Road Clone",
             "description": "Unreal Engine 4.27",
             "url": "https://github.com/cronchynekos/CrossyRoad/"
         },
         {
-            "cover": "/Personal-Portfolio/portfolio/Classic-Mario/thumb.png",
+            "cover": "/portfolio/Classic-Mario/thumb.png",
             "title": "Classic Mario Clone",
             "description": "Python, Pygame",
             "url": "https://github.com/cronchynekos/MarioPython/"
         },
         {
-            "cover": "/Personal-Portfolio/portfolio/Alien-Invasion/thumb.png",
+            "cover": "/portfolio/Alien-Invasion/thumb.png",
             "title": "Alien Invasion Clone",
             "description": "Python, Pygame",
             "url": "https://github.com/cronchynekos/AlienInvasion/"

@@ -1,5 +1,5 @@
 import './index.scss'
-import { useRef } from 'react'
+import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet'
 
@@ -12,10 +12,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                'gmail',
+                'service_ndjy673',
                 'template_zz27wxh',
-                refForm.current,
-                'xemcS10KHUKkZoDgZaser'
+                refForm.current
+                // 'xemcS10KHUKkZoDgZaser'
             )
             .then(
                 () => {
@@ -45,7 +45,7 @@ const Contact = () => {
                                 <li className='half'>
                                     <input 
                                     type='text' 
-                                    name='name' 
+                                    name='from_name' 
                                     placeholder='Name' 
                                     required 
                                     />
@@ -53,7 +53,7 @@ const Contact = () => {
                                 <li className='half'>
                                     <input 
                                     type='email' 
-                                    name='email' 
+                                    name='email_id' 
                                     placeholder='Email' 
                                     required 
                                     />
@@ -63,14 +63,14 @@ const Contact = () => {
                                     placeholder='Subject' 
                                     type="text" 
                                     name="subject" 
-                                    required/>
+                                    />
                                 </li>
                                 <li>
                                     <textarea 
                                     placeholder='Message' 
                                     text="Message" 
-                                    name="Message" 
-                                    required/>
+                                    name="message" 
+                                    />
                                 </li>
                                 <li>
                                     <input 
@@ -94,7 +94,7 @@ const Contact = () => {
                     nateykim@gmail.com
                 </div>
                 <div className="map-wrap">
-                    <MapContainer center={[33.8768860, -117.8887704]} zoom={11.5}>
+                    <MapContainer center={[33.8768860, -117.8887704]} zoom={10.5}>
                         <TileLayer 
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

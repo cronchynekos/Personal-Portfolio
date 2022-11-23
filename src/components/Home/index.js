@@ -13,7 +13,7 @@ const Home = () => {
 
 
     return (
-        <div className = "container home-page">\
+        <div className = "container home-page">
             {/* <canvas id="myThreeJsCanvas" /> */}
 
             <App />
@@ -27,8 +27,8 @@ const Home = () => {
                 <h2>
                     Aspiring Software Engineer
                 </h2>
-                <Link to="/Personal-Portfolio/contact" className='flat-button'>CONTACT ME</Link>
             </div>
+            <Link to="/contact" className='flat-button'>CONTACT ME</Link>
         </div>
 
     )

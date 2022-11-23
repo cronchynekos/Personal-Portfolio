@@ -95,15 +95,21 @@
             padding-bottom: 40px;
             width: 80%;
             height: 40%;
-            transform: translateY(570px);
+            transform: translateY(600px);
         }
         
         .info-map {
             display: none;
         }
-        .contact-page.text-zone{
-            height: 100%;
-            
+        // .contact-page.text-zone{
+        //     position: relative;
+        //     height: 100%;
+        // }
+        .contact-page{
+            .text-zone{
+            position: absolute;
+            top: 40%;
+            }
         }
         
     }
