@@ -15,6 +15,7 @@
 
 .contact-page{
     background: azure;
+    
 }
 
 @media only screen and (max-width: 1200px){
@@ -123,11 +124,9 @@
         .info-map {
             display: none;
         }
-        // .contact-page.text-zone{
-        //     position: relative;
-        //     height: 100%;
-        // }
+        
         .contact-page{
+            height: 100%;
             .text-zone{
             position: absolute;
             top: 40%;

@@ -20,6 +20,29 @@
     margin-bottom: 30px;
 }
 
+.about-page {
+    .text-zone{
+        left: 45%;
+    }
+}
+
+.about-text{
+    font-family: "Abel", sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+.aboutphotodiv{
+    position: absolute;
+    top: 33%;
+    left: 25%;
+}
+
+.aboutphoto{
+    height: 350px;
+    width: 350px;
+    border-radius: 2rem;
+}
+
 .container .skill-box {
     width: 100%;
     margin: 25px 0;
@@ -27,6 +50,7 @@
 
 .skill-box .title{
     display: block;
+    font-family: "Abel", sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: #333;
@@ -111,6 +135,20 @@
 }
 
 @media only screen and (max-width: 1200px){
+
+    .aboutphotodiv{
+        position: absolute;
+        top: 60%;
+        left: 8%;
+        margin-top: 3rem;
+    }
+    
+    .aboutphoto{
+        height: 350px;
+        width: 350px;
+        border-radius: 2rem;
+    }
+
     .botfill{
         background-color: azure;
         width: 100%;
@@ -122,6 +160,8 @@
         .text-zone{
             top: 35%;
             width: 85%;
+            // align-items: center;
+            left: 10%;
             margin: 0;
             h1{
                 font-size: 40px;

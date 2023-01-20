@@ -3,9 +3,6 @@ import "./index.scss";
 import portfolioData from "../../Data/portfolio.json";
 
 const Portfolio = () => {
-    // console.log(portfolioData);
-
-
 
     const renderPortfolio = (portfolio) => {
         return (
@@ -15,8 +12,6 @@ const Portfolio = () => {
                         return (
                             <div className="image-box" key={idx}>
                                 <img 
-                                // width="250" 
-                                // height="250"
                                 src={port.cover}
                                 className="portfolio-image"
                                 alt="portfolio" />
@@ -26,7 +21,7 @@ const Portfolio = () => {
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}>
-                                            View
+                                            Source
                                         </button>
                                 </div>
                             </div>
@@ -39,7 +34,7 @@ const Portfolio = () => {
 
     return (
         <div className="container portfolio-page">
-            <h1 className="page-title">Portfolio</h1>
+            <h1 className="page-title">Project Showcase</h1>
             <div>{renderPortfolio(portfolioData.portfolio)}</div>
         </div>
     )

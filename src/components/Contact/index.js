@@ -37,7 +37,7 @@ const Contact = () => {
                         Contact
                     </h1>
                     <p>
-                        Feel free to contact me using email, discord or any of my social medias
+                        Feel free to send me a message!
                     </p>
                     <div className='contact-form'>
                         <form ref={form} onSubmit={sendEmail}>
