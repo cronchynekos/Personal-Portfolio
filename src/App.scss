@@ -21,3 +21,11 @@ input,
 textarea {
   font-family: 'Helvetica Neue';
 }
+
+
+@media only screen and (max-width: 1200px){
+  .threeJs{
+    transform: scale(.85);
+    transform: translateY(150px);
+  }
+}

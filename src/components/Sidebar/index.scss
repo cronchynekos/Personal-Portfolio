@@ -1,20 +1,22 @@
 .nav-bar {
     background: #181818;
-    width: 60px;
+    width: 75px;
     height: 100%;
     position: absolute;
     top: 0;
     z-index: 3;
     min-height: 500px;
+    transition: width 200ms ease;
 
     .logo {
         display: block;
         padding: 8px 0;
-
+        transform: scale(1.2);
+        filter: invert(100%);
         img {
             display: block;
-            margin: 8px auto;
-            width: 24px;
+            margin: 10px auto;
+            width: 50px;
             height: auto;
 
             &.sub-logo {
@@ -39,23 +41,22 @@
         top: 50%;
         margin-top: -120px;
         width: 100%;
-
+        transition: top 200ms ease;
         a {
-            font-size: 22px;
+            font-size: 20px;
             color: #4d4d4e;
             display: block;
             line-height: 51px;
             height: 51px;
             position: relative;
             text-decoration: none;
-
+            transition: all 200ms ease;
             i {
                 transition: all 0.3s ease-out;
             }
 
             &:hover {
-                color: #ffd700;
-                
+                color: #df49a6;
                 svg {
                     opacity: 0;
                 }
@@ -67,15 +68,18 @@
 
             &:after {
                 content: '';
-                font-size: 9px;
-                font-family: sans-serif;
+                font-size: 15px;
+                font-family: "Abel", sans-serif;
+                letter-spacing: .07rem;
+                font-weight: 100;
                 position: absolute;
                 bottom: 0;
                 display: block;
+                height: 75px;
                 width: 100%;
                 text-align: center;
                 opacity: 0;
-                transition: all 0.3s ease-out;
+                transition: all 0.2s ease-out;
             }
 
             &:first-child {
@@ -91,6 +95,12 @@
             }
         }
 
+        a.portfolio-link {
+            &:after {
+                content: 'PORTFOLIO';
+            }
+        }
+
         a.contact-link {
             &:after {
                 content: 'CONTACT';
@@ -99,9 +109,10 @@
 
         a.active {
             svg {
-                color: #ffd700;
+                color: #ff7eee;
             }
         }
+
     }
 
     ul {
@@ -118,14 +129,89 @@
             a {
                 padding: 7px 0;
                 display: block;
-                font-size: 15px;
+                font-size: 17px;
                 line-height: 16px;
             }
 
             &:hover svg {
                 color: #ffd700;
+                font-size: 20px;
             }
         }
     }
 
 }
+.nav-bar:hover{
+    width: 13rem;
+    nav{
+        top: 46.75%;
+        a{
+            font-size: 25px;
+            height: 75px;
+        }
+    }
+}
+
+.hamburger-icon, .close-icon {
+    display: none;
+  }
+
+@media screen and (max-width: 1200px) {
+    .nav-bar { 
+      background: transparent;
+      position: initial;
+      height: 100%;
+      min-height: auto;
+  
+       ul, nav {
+        display: none;
+       }
+  
+       nav {
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #181818;
+        height: 100%;
+        transform: translateY(-46.8%);
+        margin: 0;
+        z-index: 2;
+        position: fixed;
+        opacity: 95%;
+  
+        &.mobile-show {
+          display: block;
+
+        }
+  
+        a {
+            top: 7%;
+            margin-bottom: 35px;
+            transform: scale(1.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+  
+        a:after {
+          opacity: 1;
+          position: initial;
+          width: auto;
+          margin-left: 10PX;
+        }
+  
+        a svg {
+          opacity: 1 !important;
+        }
+       }
+  
+       .hamburger-icon,
+       .close-icon {
+          position: absolute;
+          transform: scale(1.2);
+          top: 12px;
+          right: 25px;
+          display: block;
+       }
+    }
+  }

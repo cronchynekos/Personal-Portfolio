@@ -1,21 +1,21 @@
 import './index.scss'
-import { useRef } from 'react'
+import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet'
 
 
 const Contact = () => {
 
-    const refForm = useRef()
+    const form = useRef()
     const sendEmail = (e) => {
         e.preventDefault()
 
         emailjs
             .sendForm(
-                'gmail',
+                'service_ndjy673',
                 'template_zz27wxh',
-                refForm.current,
-                'xemcS10KHUKkZoDgZaser'
+                form.current,
+                'WT_sh37QCBKzOGyao'
             )
             .then(
                 () => {
@@ -37,40 +37,42 @@ const Contact = () => {
                         Contact
                     </h1>
                     <p>
-                        Feel free to contact me using email, discord or any of my social medias
+                        Feel free to send me a message!
                     </p>
                     <div className='contact-form'>
-                        <form ref={refForm} onSubmit={sendEmail}>
+                        <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
                                     <input 
                                     type='text' 
-                                    name='name' 
+                                    name='from_name' 
                                     placeholder='Name' 
-                                    required 
+                                    required
                                     />
                                 </li>
                                 <li className='half'>
                                     <input 
                                     type='email' 
-                                    name='email' 
+                                    name='email_id' 
                                     placeholder='Email' 
-                                    required 
+                                    required
                                     />
                                 </li>
                                 <li>
                                     <input 
                                     placeholder='Subject' 
                                     type="text" 
-                                    name="subject" 
-                                    required/>
+                                    name="subject"
+                                    required 
+                                    />
                                 </li>
                                 <li>
                                     <textarea 
                                     placeholder='Message' 
                                     text="Message" 
-                                    name="Message" 
-                                    required/>
+                                    name="message"
+                                    required 
+                                    />
                                 </li>
                                 <li>
                                     <input 
@@ -94,7 +96,7 @@ const Contact = () => {
                     nateykim@gmail.com
                 </div>
                 <div className="map-wrap">
-                    <MapContainer center={[33.8768860, -117.8887704]} zoom={11.5}>
+                    <MapContainer center={[33.8768860, -117.8887704]} zoom={10.5}>
                         <TileLayer 
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
@@ -105,7 +107,7 @@ const Contact = () => {
                         </Marker>
                     </MapContainer>
                 </div>
-                <div className ='BGFill'></div>
+                {/* <div className ='BGFill'></div> */}
             </div>
         </>
     )

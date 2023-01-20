@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+.cont{
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    left: 55%;
+    top: 24%;
+}
+
+.title-text {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    // border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.about-page {
+    .text-zone{
+        left: 45%;
+    }
+}
+
+.about-text{
+    font-family: "Abel", sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+.aboutphotodiv{
+    position: absolute;
+    top: 33%;
+    left: 25%;
+}
+
+.aboutphoto{
+    height: 350px;
+    width: 350px;
+    border-radius: 2rem;
+}
+
+.container .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box .title{
+    display: block;
+    font-family: "Abel", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0, 0, 0.1);
+}
+
+.skill-box .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 85%;
+    border-radius: 6px;
+    background: crimson;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.css {
+    width: 80%;
+    animation-delay: 0.15s;
+}
+
+.skill-per.javascript{
+    width: 60%;
+    animation-delay: 0.3s;
+}
+.skill-per.nodejs{
+    width: 85%;
+    animation-delay: 0.45s;
+}
+.skill-per.reactjs{
+    width: 65%;
+    animation-delay: 0.6s;
+}
+.skill-per.expressjs{
+    width: 75%;
+    animation-delay: 0.75s;
+}
+
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: crimson;
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: crimson;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+@media only screen and (max-width: 1200px){
+
+    .aboutphotodiv{
+        position: absolute;
+        top: 60%;
+        left: 8%;
+        margin-top: 3rem;
+    }
+    
+    .aboutphoto{
+        height: 350px;
+        width: 350px;
+        border-radius: 2rem;
+    }
+
+    .botfill{
+        background-color: azure;
+        width: 100%;
+        height: 50%;
+    }
+    .about-page {
+        height: 30%;
+        top: 6%;
+        .text-zone{
+            top: 35%;
+            width: 85%;
+            // align-items: center;
+            left: 10%;
+            margin: 0;
+            h1{
+                font-size: 40px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .cont {
+        position: absolute;
+        left: 10%;
+        top: 65%;
+        padding: 0;
+        margin: 0;
+        width: 85%;
+        background-color: azure;
+    }
+    h1.title-text { //controls "skills" title text
+    text-align: center;
+    color: black;
+    font-weight: 250;
+    left: 0%;
+    margin-bottom: 0;
+    font-size: 45px;
+    }
+    .skill-box .title{//controls the categories text
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+        font-family: 'Coolvetica';
+    }
+    .container .skill-box {
+        width: 92%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .skill-box .skill-per{
+        position: relative;
+        display: block;
+        height: 0%;
+        width: 85%;
+        border-radius: 6px;
+        background: crimson;
+        animation: progress 0.4s ease-in-out forwards;
+        opacity: 0;
+    }
+    .skill-box .skill-bar{
+        height: 20px;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 3px;
+        background: rgba(0,0, 0, 0.1);
+    }
+    .skill-per.css {
+        width: 80%;
+        animation-delay: 0.15s;
+    }
+    
+    .skill-per.javascript{
+        width: 60%;
+        animation-delay: 0.3s;
+    }
+    .skill-per.nodejs{
+        width: 85%;
+        animation-delay: 0.45s;
+    }
+    .skill-per.reactjs{
+        width: 65%;
+        animation-delay: 0.6s;
+    }
+    .skill-per.expressjs{
+        width: 75%;
+        animation-delay: 0.75s;
+    }
+}

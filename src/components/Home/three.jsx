@@ -25,7 +25,11 @@ function App() {
     gltfLoader.load('./voxelMe.gltf', function (gltfScene) {
 
       gltfScene.scene.rotation.x = Math.PI / 8;
-      gltfScene.scene.scale.set(1.3, 1.3, 1.3);
+      if ( document.URL.includes("about" || "portfolio" || "contact") ) {
+        gltfScene.scene.scale.set(0, 0, 0);
+      }else{
+        gltfScene.scene.scale.set(1.2, 1.2, 1.2);
+      }
       // gltfScene.scene.position.x = 15;
 
       test.scene.add(gltfScene.scene);
@@ -57,7 +61,7 @@ function App() {
 
   return (
     <div>
-      <canvas id="myThreeJsCanvas" />
+      {/* <canvas id="myThreeJsCanvas" /> */}
     </div>
   );
 }
