@@ -2,6 +2,7 @@ import React from "react";
 import "./index.scss";
 import portfolioData from "../../Data/portfolio.json";
 
+
 const Portfolio = () => {
 
     const renderPortfolio = (portfolio) => {
@@ -18,11 +19,21 @@ const Portfolio = () => {
                                 <div className="content">
                                     <p className="title">{port.title}</p>
                                     <h4 className="description">{port.description}</h4>
+                                    {port.website !== "" ? (
+                                    <button className="btn"
+                                    onClick={() => window.open(port.website)}>
+                                        Demo</button>
+                                    ) : (
+                                    <></>
+                                     )}
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}>
                                             Source
-                                        </button>
+                                    </button>
+                                    
+                                    <hasWebsite />
+
                                 </div>
                             </div>
                         )

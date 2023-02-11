@@ -84,7 +84,7 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-                <div className="info-map">
+                {/* <div className="info-map">
                     Nathanael Kim
                     <br/>
                     California, United States,
@@ -94,7 +94,10 @@ const Contact = () => {
                     Fullerton
                     <br />
                     nateykim@gmail.com
-                </div>
+                    <br />
+                    Jichu.nyk#7370
+                    <br />
+                </div> */}
                 <div className="map-wrap">
                     <MapContainer center={[33.8768860, -117.8887704]} zoom={10.5}>
                         <TileLayer 
@@ -102,7 +105,7 @@ const Contact = () => {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                         <Marker position={[33.8768860, -117.8887704]}>
                             <Popup>
-                            My apartment across <br /> from Cal State Fullerton
+                            Home Sweet Home!
                             </Popup>
                         </Marker>
                     </MapContainer>

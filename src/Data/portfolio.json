@@ -3,38 +3,44 @@
         {
             "cover": "https://cdn.discordapp.com/attachments/1039702613421195317/1065735870474362952/image.png",
             "title": "Worthy",
-            "description": "An athletic clothing ecommerce website. Currently WIP",
-            "url": "https://github.com/cronchynekos/Worthy/"
+            "description": "A clothing ecommerce website created using Sanity. Currently WIP",
+            "url": "https://github.com/cronchynekos/Worthy/",
+            "website": ""
         },
         {
-            "cover": "/portfolio/1/two.png",
+            "cover": "https://cdn.discordapp.com/attachments/1039702613421195317/1067689078528688158/2.png",
+            "title": "Animated Photo Gallery",
+            "description": "An animated photo gallery created using animejs",
+            "url": "https://github.com/cronchynekos/Gallery-Case-Study",
+            "website": "https://cronchynekos.github.io/Gallery-Case-Study/"
+        },
+        {
+            "cover": "https://cdn.discordapp.com/attachments/1039702613421195317/1067689361518383104/image.png",
             "title": "Cocktail House",
             "description": "An interactive recipe website built using theCocktailDB api",
-            "url": "https://cronchynekos.github.io/Cocktail-Recipe-App/"
+            "url": "https://github.com/cronchynekos/Cocktail-Recipe-App",
+            "website": "https://cronchynekos.github.io/Cocktail-Recipe-App/"
         },
         {
             "cover": "/portfolio/Fantasy-Island/thumb.png",
             "title": "Fantasy Island",
             "description": "An RPG style open world game built using Unreal Engine 4.27",
-            "url": "https://github.com/agolubow/project362/"
+            "url": "https://github.com/agolubow/project362/",
+            "website": ""
         },
         {
             "cover": "/portfolio/Crossyroad/thumb.png",
             "title": "Crossy Road",
             "description": "A clone of Crossy Road built using Unreal Engine 4.27",
-            "url": "https://github.com/cronchynekos/CrossyRoad/"
+            "url": "https://github.com/cronchynekos/CrossyRoad/",
+            "website": ""
         },
         {
             "cover": "/portfolio/Classic-Mario/thumb.png",
             "title": "Classic Mario",
             "description": "A clone of Classic Mario built using Python and Pygame",
-            "url": "https://github.com/cronchynekos/MarioPython/"
-        },
-        {
-            "cover": "/portfolio/Alien-Invasion/thumb.png",
-            "title": "Alien Invasion",
-            "description": "A clone of Alien Invasion built using Python and Pygame",
-            "url": "https://github.com/cronchynekos/AlienInvasion/"
+            "url": "https://github.com/cronchynekos/MarioPython/",
+            "website": ""
         }
     ]
 }

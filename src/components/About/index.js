@@ -15,7 +15,7 @@ const About = () => {
                     Right now, I am focused on creating beautiful front-end webpages as well as sleek mobile applications
                 </p>
                 <p className='about-text'>
-                    When i'm not coding, you'll often find me with my camera or a pickleball raquet in my hands
+                    When I'm not coding, you'll often find me with my camera or a pickleball racquet in my hands
                 </p>
             </div>
 
