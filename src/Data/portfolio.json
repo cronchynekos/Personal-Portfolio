@@ -8,14 +8,14 @@
             "website": ""
         },
         {
-            "cover": "https://cdn.discordapp.com/attachments/1039702613421195317/1067689078528688158/2.png",
+            "cover": "https://cdn.discordapp.com/attachments/1039702613421195317/1071710553648664586/image.png",
             "title": "Animated Photo Gallery",
             "description": "An animated photo gallery created using animejs",
             "url": "https://github.com/cronchynekos/Gallery-Case-Study",
             "website": "https://cronchynekos.github.io/Gallery-Case-Study/"
         },
         {
-            "cover": "https://cdn.discordapp.com/attachments/1039702613421195317/1067689361518383104/image.png",
+            "cover": "https://cdn.discordapp.com/attachments/1039702613421195317/1073848288949837845/image.png",
             "title": "Cocktail House",
             "description": "An interactive recipe website built using theCocktailDB api",
             "url": "https://github.com/cronchynekos/Cocktail-Recipe-App",
@@ -26,20 +26,6 @@
             "title": "Fantasy Island",
             "description": "An RPG style open world game built using Unreal Engine 4.27",
             "url": "https://github.com/agolubow/project362/",
-            "website": ""
-        },
-        {
-            "cover": "/portfolio/Crossyroad/thumb.png",
-            "title": "Crossy Road",
-            "description": "A clone of Crossy Road built using Unreal Engine 4.27",
-            "url": "https://github.com/cronchynekos/CrossyRoad/",
-            "website": ""
-        },
-        {
-            "cover": "/portfolio/Classic-Mario/thumb.png",
-            "title": "Classic Mario",
-            "description": "A clone of Classic Mario built using Python and Pygame",
-            "url": "https://github.com/cronchynekos/MarioPython/",
             "website": ""
         }
     ]

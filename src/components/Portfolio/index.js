@@ -29,7 +29,7 @@ const Portfolio = () => {
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}>
-                                            Source
+                                            Code
                                     </button>
                                     
                                     <hasWebsite />

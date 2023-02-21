@@ -9,10 +9,10 @@ const About = () => {
                     About Me
                 </h1>
                 <p className='about-text'>
-                    I'm Nathan, a student developer based in Fullerton, California
+                    I'm Nathan, a Software Engineer based in Fullerton, California
                 </p>
                 <p className='about-text'>
-                    Right now, I am focused on creating beautiful front-end webpages as well as sleek mobile applications
+                    Right now, I am focused on creating responsive webpages as well as beautiful mobile applications
                 </p>
                 <p className='about-text'>
                     When I'm not coding, you'll often find me with my camera or a pickleball racquet in my hands
